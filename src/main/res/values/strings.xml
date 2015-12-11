@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lesson5</string>
+    <string name="button">Convert</string>
+    <string name="title">Convert cups into teaspoon and tablespoon</string>
+    <string name="cups">No of Cups</string>
+    <string name="number">Enter no. of cup</string>
+    <string name="tablespoon">0 No of tablespoon</string>
+    <string name="teaspoon">0 No of teaspoon</string>
+</resources>
