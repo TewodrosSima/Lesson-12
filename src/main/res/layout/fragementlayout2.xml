@@ -1,55 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <!--android:gravity="center|top">-->
+    android:orientation="vertical" >
 
-    <TextView android:id="@+id/title"
+    <TextView android:id="@+id/banner"
+        android:layout_weight="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:text="@string/title" />
+        android:hint="@string/banner" />
 
-    <LinearLayout android:id="@+id/layout1"
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_weight="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:hint="@string/edit_message" />
 
-        <TextView android:id="@+id/cups"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:typeface="serif"
-            android:textSize="20dp"
-            android:text="@string/cups" />
-
-        <EditText android:id="@+id/number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/number"
-            android:inputType="number|numberDecimal" />
-
-    </LinearLayout>
-
-    <Button android:id="@+id/my_button"
+    <TextView android:id="@+id/edit_message1"
+        android:layout_weight="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="converter"
-        android:text="@string/button"/>
+        android:hint="@string/edit_message1" />
 
-    <TextView android:id="@+id/tablespoon"
+    <Button
+        android:id="@+id/my_button"
+        android:onClick="myListener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text="@string/teaspoon" />
-
-    <TextView android:id="@+id/teaspoon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text="@string/teaspoon" />
+        android:text="@string/my_button" />
 
 </LinearLayout>
